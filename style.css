@@ -1,0 +1,118 @@
+body {
+    background-color: #D7F3EC;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header {
+    text-align: center;
+}
+
+.avatar{
+    height: 250px;
+    width: 300px;
+}
+
+.header_title {
+    color: #3D5215;
+    font-size: 30px;
+}
+
+.header_subtitle {
+    color: #5B0C47;
+    font-size: 25px;
+}
+
+.skills {
+    color: #3D5215;
+    font-size: 18px;
+}
+
+.skills ol {
+    list-style: none;
+    padding-left: 0.5em;
+}
+
+main {
+    border: 2px solid #3D5215;
+    text-align: center;
+}
+
+.article {
+    color: #5B0C47;
+    font-size: 17px;
+}
+
+.separator {
+    width: 50%;
+    height: 3px;
+    background-color:#5B0C47;
+}
+
+.separator-two {
+    width: 80%;
+    height: 3px;
+    background-color:#5B0C47;
+}
+
+.gallery {
+    color: #3D5215;
+}
+
+.hobbies {
+    color: #3D5215;
+}
+
+.hobbies ol {
+    list-style: none;
+    padding-left: 0.5em;
+}
+
+.ed__table {
+    border-collapse: collapse;
+    width: 85%;
+    margin: 0 auto
+}
+
+.ed__table th,
+.ed__table td {
+    border: 2px solid #3D5215;
+    padding: 7px;
+    color: #3D5215;
+}
+
+.infinity-symbol {
+    font-size: 28px;
+}
+
+.quote {
+    font-size: 28px;
+    color: #5B0C47;
+}
+
+footer {
+    height: 100px;
+    text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button--vk {
+  background-color: #0077FF;
+}
+
+.button--tg {
+  background-color: #0088CC;
+}
+
+.title {
+    color: #3D5215;
+}
