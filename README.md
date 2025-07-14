@@ -7,4 +7,4 @@
 ```
 
 [CV page repository](https://github.com/Superpnz/CV_Page)
-![image](img/Без_фона_за_ноутбуком2.png)
+![image](Aseets/Без_фона_за_ноутбуком2.png)
