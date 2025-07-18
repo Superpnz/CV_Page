@@ -1,3 +1,8 @@
+:root {
+    --color-one: #3D5215;
+    --color-two: #5B0C47;
+}
+
 body {
     background-color: #D7F3EC;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -13,17 +18,17 @@ body {
 }
 
 .header_title {
-    color: #3D5215;
+    color: var(--color-one);
     font-size: 30px;
 }
 
 .header_subtitle {
-    color: #5B0C47;
+    color: var(--color-two);
     font-size: 25px;
 }
 
 .skills {
-    color: #3D5215;
+    color: var(--color-one);
     font-size: 18px;
 }
 
@@ -38,28 +43,28 @@ main {
 }
 
 .article {
-    color: #5B0C47;
+    color: var(--color-two);
     font-size: 17px;
 }
 
 .separator {
     width: 50%;
     height: 3px;
-    background-color:#5B0C47;
+    background-color:var(--color-two);
 }
 
 .separator-two {
     width: 80%;
     height: 3px;
-    background-color:#5B0C47;
+    background-color:var(--color-two);
 }
 
 .gallery {
-    color: #3D5215;
+    color: var(--color-one);
 }
 
 .hobbies {
-    color: #3D5215;
+    color: var(--color-one);
 }
 
 .hobbies ol {
@@ -77,7 +82,7 @@ main {
 .ed__table td {
     border: 2px solid #3D5215;
     padding: 7px;
-    color: #3D5215;
+    color: var(--color-one);
 }
 
 .infinity-symbol {
@@ -86,7 +91,7 @@ main {
 
 .quote {
     font-size: 28px;
-    color: #5B0C47;
+    color: var(--color-two);
 }
 
 footer {
@@ -119,5 +124,5 @@ footer {
 }
 
 .title {
-    color: #3D5215;
+    color: var(--color-one);
 }
