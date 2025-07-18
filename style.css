@@ -114,6 +114,10 @@ footer {
   background-color: #0088CC;
 }
 
+.button--git {
+  background-color: #1f2328;
+}
+
 .title {
     color: #3D5215;
 }
