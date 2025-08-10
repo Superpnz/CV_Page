@@ -95,33 +95,30 @@ main {
 }
 
 footer {
-    height: 100px;
+    padding: 5px 0;
     text-align: center;
 }
 
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  margin: 5px;
-  box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.5)
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+    padding: 5px 0;
 }
 
-.button--vk {
-  background-color: #0077FF;
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
-.button--tg {
-  background-color: #0088CC;
+.icon-svg {
+    width: 60px;
+    height: 60px;
 }
 
-.button--git {
-  background-color: #1f2328;
-}
 
 .title {
     color: var(--color-one);
