@@ -11,25 +11,41 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
     <link rel="manifest" href="favicon/site.webmanifest" />
     <script src="slider.js" defer></script>
+    <script src="lang.js" defer></script>
 
     <title>CV Page</title>
 </head>
 
 <body>
+    <div class="lang-switch">
+        <button onclick="setLang('ru')">RU</button>
+        <button onclick="setLang('en')">EN</button>
+    </div>
     <header class="header">
         <!--Здесь у нас главное изображение и заголовок-->
         <img src="Assets/Без_фона_за_ноутбуком2.png" alt="my photo" class="avatar">
-        <h1 class="header_title">Maksim Anikeev | CV</h1>
-        <h2 class="header_subtitle">Frontend Developer</h2>
+        <h1 class="header_title" 
+        data-ru="Максим Аникеев | Резюме"
+        data-en="Maksim Anikeev | CV">
+        </h1>
+        <h2 class="header_subtitle"
+        data-ru="Frontend Разработчик"
+        data-en="Frontend Developer">
+        </h2>
     </header>
 
     <main>
         <section class="skills">
             <!--Мои навыки-->
-            <h3>Skills</h3>
+            <h3 
+            data-ru="Навыки" 
+            data-en="Skills">
+            </h3>
 
             <details>
-                <summary>Skills list:</summary>
+                <summary data-ru="Перечень навыков:"
+                data-en="Skills list:">
+                </summary>
 
                 <ol>
                     <li>1.HTML</li>
@@ -38,38 +54,41 @@
                     <li>4.React</li>
                     <li>5.TypeScript</li>
                     <li>6.Git</li>
+                    <li>7.Vite</li>
                 </ol>
             </details>
         </section>
 
         <article class="article">
-            <h3>Short article about me</h3>
+            <h3
+            data-ru="Обо мне"
+            data-en="Short article about me">
+            </h3>
 
-            <p>
-                In 2024, I made the decision to switch careers and pursue a path as a developer. Along the way, I’ve
-                learned a great deal and gained practical skills in Frontend development.(Я в 2024 году решил поменять
-                свою профессию и стать разработчиком. На пути к цели я изучил много различной информации и приобрёл
-                навыки связанные с профессией Frontend разработчика.)
+            <p data-ru="Я в 2024 году решил поменять свою профессию и стать разработчиком. На пути к цели я изучил много различной информации и приобрёл навыки связанные с профессией Frontend разработчика." 
+            data-en="In 2024, I made the decision to switch careers and pursue a path as a developer. Along the way, I’ve learned a great deal and gained practical skills in Frontend development.">
             </p>
         </article>
 
         <section class="gallery">
             <!--Мои сертификат -->
-            <h4>Certificate</h4>
+            <h4 
+            data-ru="Сертификаты"
+            data-en="Certificate">
+            </h4>
             <div class="slider-container">
                 <div class="slider" data-slider></div>
                 <button class="prev" data-btn-prev>❮</button>
                 <button class="next" data-btn-next>❯</button>
             </div>
-            <!-- <img src="Assets/Сертификат_основы_алгоритмов_и_структур_данных.webp" height="250" width="350" alt="
-certificate">
-            <img src="Assets/Сертификат_основы_цифровой_граматности.webp" height="250" width="350" alt="
-certificate"> -->
 
             <hr class="separator">
             <!--Мои изображения-->
 
-            <h3>Gallery</h3>
+            <h3 
+            data-ru="Галерея"
+            data-en="Gallery">
+            </h3>
             <img src="Assets/Программирование_в_горах.webp" height="250" width="250" alt="developer lifestyle">
             <img src="Assets/Моё_лицо.webp" height="250" width="250" alt="my photo">
             <img src="Assets/Бокс_в_лесу.webp" height="250" width="250" alt="hobby">
@@ -81,15 +100,33 @@ certificate"> -->
 
         <!--Мои увлечения-->
         <section class="hobbies">
-            <h3>My hobbies:</h3>
+            <h3 
+            data-ru="Мои увлечения:" 
+            data-en="My hobbies:">
+            </h3>
             <details>
-                <summary>Hobbies</summary>
+                <summary 
+                data-ru="Увлечения" 
+                data-en="Hobbies">
+                </summary>
 
                 <ol>
-                    <li>Reading books</li>
-                    <li>Powerlifting</li>
-                    <li>Walks with friends</li>
-                    <li>Boxing</li>
+                    <li 
+                    data-ru="Чтение книг" 
+                    data-en="Reading books">
+                    </li>
+                    <li 
+                    data-ru="Пауэрлифтинг" 
+                    data-en="Powerlifting">
+                    </li>
+                    <li 
+                    data-ru="Прогулки с друзьями" 
+                    data-en="Walks with friends">
+                    </li>
+                    <li 
+                    data-ru="Бокс" 
+                    data-en="Boxing">
+                    </li>
                 </ol>
             </details>
         </section>
@@ -101,26 +138,49 @@ certificate"> -->
             <table class="ed__table">
                 <thead>
                     <tr>
-                        <th>School / University</th>
-                        <th>Profession</th>
-                        <th>Year of manufacture</th>
+                        <th 
+                        data-ru="Школа / Университет"
+                        data-en="School / University">
+                        </th>
+                        <th
+                        data-ru="Специальность"
+                        data-en="Profession">
+                        </th>
+                        <th 
+                        data-ru="Год окончания"
+                        data-en="Year of manufacture">
+                        </th>
                     </tr>
                 </thead>
 
                 <tbody>
                     <tr>
-                        <td>School №16</td>
+                        <td 
+                        data-ru="Школа №16"
+                        data-en="School №16">
+                        </td>
                         <td class="infinity-symbol">-</td>
                         <td>2015</td>
                     </tr>
                     <tr>
-                        <td>Penza State University</td>
-                        <td>Law enforcement</td>
+                        <td 
+                        data-ru="Пензенский Государственный Университет"
+                        data-en="Penza State University">
+                        </td>
+                        <td
+                        data-ru="Правоохранительная деятельность"
+                        data-en="Law enforcement"></td>
                         <td>2020</td>
                     </tr>
                     <tr>
-                        <td>Self-Education in IT</td>
-                        <td>Frontend developer</td>
+                        <td
+                        data-ru="Самообразование в сфере IT"
+                        data-en="Self-Education in IT">
+                        </td>
+                        <td
+                        data-ru="Frontend Разработчик"
+                        data-en="Frontend Developer">
+                        </td>
                         <td class="infinity-symbol">∞</td>
                     </tr>
                 </tbody>
@@ -129,12 +189,9 @@ certificate"> -->
 
         <!--Цитата-->
         <section class="quote">
-            <blockquote>
-                I think that power is in truth. Whoever has the truth is stronger. 
-                
-                <br>
-                
-                ( Я вот думаю, что сила в правде. У кого правда — тот и сильней. )
+            <blockquote
+            data-ru="Я вот думаю, что сила в правде. У кого правда — тот и сильней."
+            data-en="I think that power is in truth. Whoever has the truth is stronger.">
             </blockquote>
         </section>
     </main>
@@ -143,7 +200,9 @@ certificate"> -->
 
     <!--Мои соц сети-->
     <footer>
-        <h4 class="title">Links to my social networks:</h4>
+        <h4 class="title" 
+        data-ru="Ссылки на мои социальные сети:"
+        data-en="Links to my social networks:"></h4>
         <address class="social-links">
             <a href="https://vk.com/makson58" class="icon" aria-label="My VK profile" target="_blank">
                 <svg class="icon-svg">

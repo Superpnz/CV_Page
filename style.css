@@ -166,6 +166,31 @@ footer {
     color: var(--color-one);
 }
 
+.lang-switch {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    gap: 8px;
+    z-index: 1000;
+
+    button {
+        padding: 6px 10px;
+        font-size: 14px;
+        cursor: pointer;
+        background-color: #a4fdfe;
+        color: var(--color-two);
+        border: 1px solid #999;
+        border-radius: 6px;
+    }
+
+    button.active {
+        background-color: #2bbec3;
+        color: #ffffff;
+        border-color: #2bbec3;
+    }
+}
+
 @media (max-width: 768px) {
     .slider-container {
         width: 450px;
