@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
     <link rel="manifest" href="favicon/site.webmanifest" />
+    <script src="slider.js" defer></script>
 
     <title>CV Page</title>
 </head>
@@ -55,10 +56,15 @@
         <section class="gallery">
             <!--Мои сертификат -->
             <h4>Certificate</h4>
-            <img src="Assets/Сертификат_основы_алгоритмов_и_структур_данных.webp" height="250" width="350" alt="
+            <div class="slider-container">
+                <div class="slider" data-slider></div>
+                <button class="prev" data-btn-prev>❮</button>
+                <button class="next" data-btn-next>❯</button>
+            </div>
+            <!-- <img src="Assets/Сертификат_основы_алгоритмов_и_структур_данных.webp" height="250" width="350" alt="
 certificate">
             <img src="Assets/Сертификат_основы_цифровой_граматности.webp" height="250" width="350" alt="
-certificate">
+certificate"> -->
 
             <hr class="separator">
             <!--Мои изображения-->
