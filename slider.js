@@ -1,4 +1,5 @@
 const images = [
+    "Assets/Udemy React Kalatilshchykau .webp",
     "Assets/Сертификат_основы_алгоритмов_и_структур_данных.webp",
     "Assets/Сертификат_основы_цифровой_граматности.webp",
 ];
