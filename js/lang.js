@@ -10,4 +10,6 @@ function setLang(lang) {
     });
 }
 
+window.setLang = setLang;
+
 setLang(localStorage.getItem("lang") || "ru");

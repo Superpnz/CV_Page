@@ -10,197 +10,252 @@
     <link rel="shortcut icon" href="favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
     <link rel="manifest" href="favicon/site.webmanifest" />
-    <script src="slider.js" defer></script>
-    <script src="lang.js" defer></script>
-    <script src="upBtn.js" defer></script>
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="js/index.js" type="module"></script>
 
-    <title>CV Page</title>
+    <title>Anik CV</title>
 </head>
 
-<body>
-    <div class="lang-switch">
-        <button onclick="setLang('ru')">RU</button>
-        <button onclick="setLang('en')">EN</button>
-    </div>
-    <header class="header">
-        <!--Здесь у нас главное изображение и заголовок-->
-        <img src="Assets/Без_фона_за_ноутбуком2.png" alt="my photo" class="avatar">
-        <h1 class="header_title" 
-        data-ru="Максим Аникеев | Резюме"
-        data-en="Maksim Anikeev | CV">
-        </h1>
-        <h2 class="header_subtitle"
-        data-ru="Frontend Разработчик"
-        data-en="Frontend Developer">
-        </h2>
-    </header>
+<body id="home">
+    <header class="site-header">
+        <div class="header-container">
 
-    <main>
-        <section class="skills">
-            <!--Мои навыки-->
-            <h3 
-            data-ru="Навыки" 
-            data-en="Skills">
-            </h3>
+            <!-- Логотип -->
+            <a href="#home" class="header-logo">
+                <img src="Assets/anik-cv.png" alt=" Логотип Anik CV">
+            </a>
 
-            <details>
-                <summary data-ru="Перечень навыков:"
-                data-en="Skills list:">
-                </summary>
+            <!-- Навигация -->
+            <nav class="header-nav" id="header-nav">
+                <a href="#home" 
+                data-ru="Главная"
+                data-en="Home"></a>
+                <a href="#technologies" data-ru="Технологии"
+                data-en="Technologies"></a>
+                <a href="#projects" data-ru="Проекты"
+                data-en="Projects"></a>
+                <a href="#about" data-ru="Обо мне"
+                data-en="About me"></a>
+                <a href="#gallery" data-ru="Галерея"
+                data-en="Gallery"></a>
+                <a href="#hobbies" data-ru="Увлечения"
+                data-en="Hobbies"></a>
+                <a href="#contacts" data-ru="Контакты"
+                data-en="Contacts"></a>
+            </nav>
 
-                <ol>
-                    <li>1.HTML</li>
-                    <li>2.CSS / SCSS</li>
-                    <li>3.JavaScript</li>
-                    <li>4.React</li>
-                    <li>5.TypeScript</li>
-                    <li>6.Git</li>
-                    <li>7.Vite</li>
-                </ol>
-            </details>
-        </section>
-
-        <article class="article">
-            <h3
-            data-ru="Обо мне"
-            data-en="Short article about me">
-            </h3>
-
-            <p data-ru="Я в 2024 году решил поменять свою профессию и стать разработчиком. На пути к цели я изучил много различной информации и приобрёл навыки связанные с профессией Frontend разработчика." 
-            data-en="In 2024, I made the decision to switch careers and pursue a path as a developer. Along the way, I’ve learned a great deal and gained practical skills in Frontend development.">
-            </p>
-        </article>
-
-        <section class="gallery">
-            <!--Мои сертификат -->
-            <h4 
-            data-ru="Сертификаты"
-            data-en="Certificate">
-            </h4>
-            <div class="slider-container">
-                <div class="slider" data-slider></div>
-                <button class="prev" data-btn-prev>❮</button>
-                <button class="next" data-btn-next>❯</button>
+            <!-- Переключение языка -->
+            <div class="lang-switch">
+                <button onclick="setLang('ru')" type="button">RU</button>
+                <button onclick="setLang('en')" type="button">EN</button>
             </div>
 
+            <!-- Кнопка бургер-меню -->
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Открыть меню"
+                aria-expanded="false"
+                aria-controls="header-nav"
+            >
+                <i data-lucide="menu"></i>
+            </button>
+
+        </div>
+    </header>
+    
+    <main >
+        <header class="header">
+            <!--Здесь у нас главное изображение и заголовок-->
+            <img src="Assets/Без_фона_за_ноутбуком2.png" alt="my photo" class="avatar">
+            <h1 class="header_title" 
+            data-ru="Максим Аникеев | Резюме"
+            data-en="Maksim Anikeev | CV">
+            </h1>
+            <h2 class="header_subtitle"
+            data-ru="Frontend Разработчик"
+            data-en="Frontend Developer">
+            </h2>
+        </header>
+
+        <div class="main-content">
+
+            <section class="skills" id="technologies">
+                <!--Мои навыки-->
+                <h3 
+                data-ru="Технологии" 
+                data-en="Technologies">
+                </h3>
+    
+                <details>
+                    <summary data-ru="Перечень технологий:"
+                    data-en="List of technologies:">
+                    </summary>
+    
+                    <ol>
+                        <li>1.HTML</li>
+                        <li>2.CSS / SCSS</li>
+                        <li>3.JavaScript</li>
+                        <li>4.React</li>
+                        <li>5.TypeScript</li>
+                        <li>6.Git</li>
+                        <li>7.Vite</li>
+                    </ol>
+                </details>
+            </section>
+
+            <hr class="separator-two">
+
+            <section class="project" id="project">
+                <h3 data-ru="Мои проекты"
+                data-en="My projects"></h3>
+            </section>
+
+            <hr class="separator-two">
+    
+            <article class="article" id="about">
+                <h3
+                data-ru="Обо мне"
+                data-en="About me">
+                </h3>
+    
+                <p data-ru="Я в 2024 году решил поменять свою профессию и стать разработчиком. На пути к цели я изучил много различной информации и приобрёл навыки связанные с профессией Frontend разработчика." 
+                data-en="In 2024, I made the decision to switch careers and pursue a path as a developer. Along the way, I’ve learned a great deal and gained practical skills in Frontend development.">
+                </p>
+            </article>
+    
+            <section class="gallery">
+                <!--Мои сертификат -->
+                <h4 
+                data-ru="Сертификаты"
+                data-en="Certificate">
+                </h4>
+                <div class="slider-container">
+                    <div class="slider" data-slider></div>
+                    <button class="prev" data-btn-prev>❮</button>
+                    <button class="next" data-btn-next>❯</button>
+                </div>
+    
+                <hr class="separator">
+                <!--Мои изображения-->
+    
+                <h3 
+                id="gallery"
+                data-ru="Галерея"
+                data-en="Gallery">
+                </h3>
+                <img src="Assets/Программирование_в_горах.webp" height="250" width="250" alt="developer lifestyle">
+                <img src="Assets/Моё_лицо.webp" height="250" width="250" alt="my photo">
+                <img src="Assets/Бокс_в_лесу.webp" height="250" width="250" alt="hobby">
+                <img src="Assets/Стиль_аниме.webp" height="250" width="200" alt="rest">
+                <img src="Assets/Стиль_пиксар.webp" height="250" width="200" alt="rest">
+            </section>
+    
+            <hr class="separator-two">
+    
+            <!--Мои увлечения-->
+            <section class="hobbies" id="hobbies">
+                <h3 
+                data-ru="Мои увлечения:" 
+                data-en="My hobbies:">
+                </h3>
+                <details>
+                    <summary 
+                    data-ru="Увлечения" 
+                    data-en="Hobbies">
+                    </summary>
+    
+                    <ol>
+                        <li 
+                        data-ru="Чтение книг" 
+                        data-en="Reading books">
+                        </li>
+                        <li 
+                        data-ru="Пауэрлифтинг" 
+                        data-en="Powerlifting">
+                        </li>
+                        <li 
+                        data-ru="Прогулки с друзьями" 
+                        data-en="Walks with friends">
+                        </li>
+                        <li 
+                        data-ru="Бокс" 
+                        data-en="Boxing">
+                        </li>
+                    </ol>
+                </details>
+            </section>
+    
             <hr class="separator">
-            <!--Мои изображения-->
-
-            <h3 
-            data-ru="Галерея"
-            data-en="Gallery">
-            </h3>
-            <img src="Assets/Программирование_в_горах.webp" height="250" width="250" alt="developer lifestyle">
-            <img src="Assets/Моё_лицо.webp" height="250" width="250" alt="my photo">
-            <img src="Assets/Бокс_в_лесу.webp" height="250" width="250" alt="hobby">
-            <img src="Assets/Стиль_аниме.webp" height="250" width="200" alt="rest">
-            <img src="Assets/Стиль_пиксар.webp" height="250" width="200" alt="rest">
-        </section>
-
-        <hr class="separator-two">
-
-        <!--Мои увлечения-->
-        <section class="hobbies">
-            <h3 
-            data-ru="Мои увлечения:" 
-            data-en="My hobbies:">
-            </h3>
-            <details>
-                <summary 
-                data-ru="Увлечения" 
-                data-en="Hobbies">
-                </summary>
-
-                <ol>
-                    <li 
-                    data-ru="Чтение книг" 
-                    data-en="Reading books">
-                    </li>
-                    <li 
-                    data-ru="Пауэрлифтинг" 
-                    data-en="Powerlifting">
-                    </li>
-                    <li 
-                    data-ru="Прогулки с друзьями" 
-                    data-en="Walks with friends">
-                    </li>
-                    <li 
-                    data-ru="Бокс" 
-                    data-en="Boxing">
-                    </li>
-                </ol>
-            </details>
-        </section>
-
-        <hr class="separator">
-
-        <!--Моё образование-->
-        <section class="ed">
-            <table class="ed__table">
-                <thead>
-                    <tr>
-                        <th 
-                        data-ru="Школа / Университет"
-                        data-en="School / University">
-                        </th>
-                        <th
-                        data-ru="Специальность"
-                        data-en="Profession">
-                        </th>
-                        <th 
-                        data-ru="Год окончания"
-                        data-en="Year of manufacture">
-                        </th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td 
-                        data-ru="Школа №16"
-                        data-en="School №16">
-                        </td>
-                        <td class="infinity-symbol">-</td>
-                        <td>2015</td>
-                    </tr>
-                    <tr>
-                        <td 
-                        data-ru="Пензенский Государственный Университет"
-                        data-en="Penza State University">
-                        </td>
-                        <td
-                        data-ru="Правоохранительная деятельность"
-                        data-en="Law enforcement"></td>
-                        <td>2020</td>
-                    </tr>
-                    <tr>
-                        <td
-                        data-ru="Самообразование в сфере IT"
-                        data-en="Self-Education in IT">
-                        </td>
-                        <td
-                        data-ru="Frontend Разработчик"
-                        data-en="Frontend Developer">
-                        </td>
-                        <td class="infinity-symbol">∞</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!--Цитата-->
-        <section class="quote">
-            <blockquote
-            data-ru="Я вот думаю, что сила в правде. У кого правда — тот и сильней."
-            data-en="I think that power is in truth. Whoever has the truth is stronger.">
-            </blockquote>
-        </section>
+    
+            <!--Моё образование-->
+            <section class="ed">
+                <table class="ed__table">
+                    <thead>
+                        <tr>
+                            <th 
+                            data-ru="Школа / Университет"
+                            data-en="School / University">
+                            </th>
+                            <th
+                            data-ru="Специальность"
+                            data-en="Profession">
+                            </th>
+                            <th 
+                            data-ru="Год окончания"
+                            data-en="Year of manufacture">
+                            </th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td 
+                            data-ru="Школа №16"
+                            data-en="School №16">
+                            </td>
+                            <td class="infinity-symbol">-</td>
+                            <td>2015</td>
+                        </tr>
+                        <tr>
+                            <td 
+                            data-ru="Пензенский Государственный Университет"
+                            data-en="Penza State University">
+                            </td>
+                            <td
+                            data-ru="Правоохранительная деятельность"
+                            data-en="Law enforcement"></td>
+                            <td>2020</td>
+                        </tr>
+                        <tr>
+                            <td
+                            data-ru="Самообразование в сфере IT"
+                            data-en="Self-Education in IT">
+                            </td>
+                            <td
+                            data-ru="Frontend Разработчик"
+                            data-en="Frontend Developer">
+                            </td>
+                            <td class="infinity-symbol">∞</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+    
+            <!--Цитата-->
+            <section class="quote">
+                <blockquote
+                data-ru="Я вот думаю, что сила в правде. У кого правда — тот и сильней."
+                data-en="I think that power is in truth. Whoever has the truth is stronger.">
+                </blockquote>
+            </section>
+        </div>
     </main>
     
     <hr class="separator">
 
     <!--Мои соц сети-->
-    <footer>
+    <footer id="contacts">
         <h4 class="title" 
         data-ru="Ссылки на мои социальные сети:"
         data-en="Links to my social networks:"></h4>
