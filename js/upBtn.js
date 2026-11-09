@@ -1,13 +1,11 @@
 const upButton = document.querySelector(".btn-up-arrow");
 
 if (upButton) {
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > 200) {
-            upButton.classList.add("show");
-        } else {
-            upButton.classList.remove("show");
-        }
-    });
+    const toggleUpButton = () => {
+        upButton.classList.toggle("show", window.scrollY > 200);
+    };
+
+    window.addEventListener("scroll", toggleUpButton);
 
     upButton.addEventListener("click", () => {
         window.scrollTo({
@@ -15,4 +13,6 @@ if (upButton) {
             behavior: "smooth"
         });
     });
+
+    toggleUpButton();
 }
