@@ -527,11 +527,11 @@ footer {
         order: 4;
         width: 100%;
         flex-direction: column;
+        flex-wrap: nowrap;
         align-items: center;
         gap: 18px;
         padding: 0;
         border-top: 1px solid rgba(61, 82, 21, 0.12);
-
         max-height: 0;
         overflow: hidden;
         visibility: hidden;
