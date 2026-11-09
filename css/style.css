@@ -397,3 +397,12 @@ footer {
     visibility: visible;
 }
 
+section#technologies,
+section#project,
+section#about,
+section#gallery,
+section#hobbies,
+section#contacts {
+    scroll-margin-top: 50px;
+}
+
