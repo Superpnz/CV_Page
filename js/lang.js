@@ -1,5 +1,14 @@
 function setLang(lang) {
-    localStorage.setItem("lang", lang);
+    if (!["ru", "en"].includes(lang)) {
+        console.warn(`Неподдерживаемый язык: ${lang}`);
+        return;
+    }
+
+    try {
+        localStorage.setItem("lang", lang);
+    } catch (error) {
+        console.warn("Не удалось сохранить предпочтительный язык:", error);
+    }
 
     document.querySelectorAll("[data-ru]").forEach((el) => {
         el.textContent = el.dataset[lang];
@@ -12,4 +21,12 @@ function setLang(lang) {
 
 window.setLang = setLang;
 
-setLang(localStorage.getItem("lang") || "ru");
+let savedLang = "ru";
+
+try {
+    savedLang = localStorage.getItem("lang") || "ru";
+} catch (error) {
+    console.warn("Не удалось сохранить предпочтительный язык:", error);
+}
+
+setLang(savedLang);
