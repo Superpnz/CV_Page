@@ -1,5 +1,5 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const headerNav = document.querySelector(".header-nav");
+const menuToggle = document.querySelector(".site-header__menu-toggle");
+const headerNav = document.querySelector(".site-header__nav");
 
 const updateIcons = () => {
     if (window.lucide) {

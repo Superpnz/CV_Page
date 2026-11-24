@@ -18,15 +18,15 @@
 
 <body id="home">
     <header class="site-header">
-        <div class="header-container">
+        <div class="site-header__container">
 
             <!-- Логотип -->
-            <a href="#home" class="header-logo">
+            <a href="#home" class="site-header__logo">
                 <img src="Assets/anik-cv.png" alt=" Логотип Anik CV">
             </a>
 
             <!-- Навигация -->
-            <nav class="header-nav" id="header-nav">
+            <nav class="site-header__nav" id="header-nav">
                 <a href="#home" data-ru="Главная" data-en="Home"></a>
                 <a href="#technologies" data-ru="Технологии" data-en="Technologies"></a>
                 <a href="#projects" data-ru="Проекты" data-en="Projects"></a>
@@ -43,7 +43,7 @@
             </div>
 
             <!-- Кнопка бургер-меню -->
-            <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"
+            <button class="site-header__menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"
                 aria-controls="header-nav">
                 <i data-lucide="menu"></i>
             </button>
@@ -52,12 +52,12 @@
     </header>
 
     <main>
-        <header class="header">
+        <header class="intro">
             <!--Здесь у нас главное изображение и заголовок-->
-            <img src="Assets/Без_фона_за_ноутбуком2.png" alt="my photo" class="avatar">
-            <h1 class="header_title" data-ru="Максим Аникеев | Резюме" data-en="Maksim Anikeev | CV">
+            <img src="Assets/Без_фона_за_ноутбуком2.png" alt="my photo" class="intro__avatar">
+            <h1 class="intro__title" data-ru="Максим Аникеев | Резюме" data-en="Maksim Anikeev | CV">
             </h1>
-            <h2 class="header_subtitle" data-ru="Frontend Разработчик" data-en="Frontend Developer">
+            <h2 class="intro__subtitle" data-ru="Frontend Разработчик" data-en="Frontend Developer">
             </h2>
         </header>
 
@@ -86,7 +86,7 @@
 
             <hr class="separator">
 
-            <section class="project" id="project">
+            <section class="project" id="projects">
                 <h3 data-ru="Мои проекты" data-en="My projects"></h3>
             </section>
 
@@ -105,17 +105,17 @@
             <section class="gallery" id="gallery">
                 <!--Мои сертификат -->
                 <h4 data-ru="Сертификаты" data-en="Certificate"></h4>
-                <div class="slider-container">
-                    <div class="slider" data-slider></div>
-                    <button class="prev" data-btn-prev aria-label="Предыдущий сертификат">
+                <div class="slider__container">
+                    <div class="slider__track" data-slider></div>
+                    <button class="slider__button slider__button--prev" data-btn-prev aria-label="Предыдущий сертификат">
                         <i data-lucide="chevron-left"></i>
                     </button>
-                    <button class="next" data-btn-next aria-label="Следующий сертификат">
+                    <button class="slider__button slider__button--next" data-btn-next aria-label="Следующий сертификат">
                         <i data-lucide="chevron-right"></i>
                     </button>
                 </div>
 
-                <div class="slider-pagination" data-pagination></div>
+                <div class="slider__pagination" data-pagination></div>
 
                 <hr class="separator">
             </section>
@@ -161,7 +161,7 @@
                         <tr>
                             <td data-ru="Школа №16" data-en="School №16">
                             </td>
-                            <td class="infinity-symbol">-</td>
+                            <td class="ed__infinity-symbol">-</td>
                             <td>2015</td>
                         </tr>
                         <tr>
@@ -175,7 +175,7 @@
                             </td>
                             <td data-ru="Frontend Разработчик" data-en="Frontend Developer">
                             </td>
-                            <td class="infinity-symbol">∞</td>
+                            <td class="ed__infinity-symbol">∞</td>
                         </tr>
                     </tbody>
                 </table>

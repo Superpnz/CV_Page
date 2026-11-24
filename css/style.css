@@ -45,7 +45,7 @@ body {
 }
 
 
-.header-container {
+.site-header__container {
     min-height: 70px;
     margin: 0 auto;
     padding: 10px 30px;
@@ -57,13 +57,13 @@ body {
 
 /* LOGO */
 
-.header-logo {
+.site-header__logo {
     display: flex;
     align-items: center;
     flex-shrink: 0;
 }
 
-.header-logo img {
+.site-header__logo img {
     display: block;
     width: 190px;
     height: 80px;
@@ -71,20 +71,20 @@ body {
     transition: transform 0.3s ease;
 }
 
-.header-logo:hover img {
+.site-header__logo:hover img {
     transform: scale(1.04);
 }
 
 /* NAVIGATION */
 
-.header-nav {
+.site-header__nav {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
 }
 
-.header-nav a {
+.site-header__nav a {
     position: relative;
     text-decoration: none;
     color: var(--color-one);
@@ -93,7 +93,7 @@ body {
     transition: color 0.3s ease;
 }
 
-.header-nav a::after {
+.site-header__nav a::after {
     content: "";
     position: absolute;
     bottom: -7px;
@@ -105,11 +105,11 @@ body {
     transition: width 0.3s ease;
 }
 
-.header-nav a:hover {
+.site-header__nav a:hover {
     color: var(--color-two);
 }
 
-.header-nav a:hover::after {
+.site-header__nav a:hover::after {
     width: 100%;
 }
 
@@ -150,7 +150,7 @@ body {
     outline-offset: 2px;
 }
 
-.menu-toggle {
+.site-header__menu-toggle {
     display: none;
     width: 42px;
     height: 42px;
@@ -164,34 +164,34 @@ body {
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.menu-toggle:hover {
+.site-header__menu-toggle:hover {
     background: rgba(91, 12, 71, 0.12);
     color: var(--color-two);
 }
 
-.menu-toggle svg {
+.site-header__menu-toggle svg {
     width: 23px;
     height: 23px;
     stroke-width: 2;
 }
 
-.avatar {
+.intro__avatar {
     padding-top: 20px;
     height: auto;
     width: 300px;
     max-width: 100%;
 }
 
-.header {
+.intro {
     text-align: center;
 }
 
-.header_title {
+.intro__title {
     color: var(--color-one);
     font-size: 30px;
 }
 
-.header_subtitle {
+.intro__subtitle {
     color: var(--color-two);
     font-size: 25px;
 }
@@ -242,7 +242,7 @@ body {
     height: auto;
 }
 
-.slider-container {
+.slider__container {
     position: relative;
     width: 100%;
     max-width: 800px;
@@ -254,7 +254,7 @@ body {
 }
 
 
-.slider {
+.slider__track {
     height: 100%;
     width: 100%;
     display: flex;
@@ -268,8 +268,8 @@ body {
     padding: 0 70px;
 }
 
-.prev,
-.next {
+/* Общие стили кнопок слайдера */
+.slider__button {
     position: absolute;
     top: 50%;
     translate: 0 -50%;
@@ -289,33 +289,35 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.prev {
+/* Левая кнопка */
+.slider__button--prev {
     left: 10px;
 }
 
-.next {
+/* Правая кнопка */
+.slider__button--next {
     right: 10px;
 }
 
-.prev:hover,
-.next:hover {
+/* Наведение */
+.slider__button:hover {
     transform: scale(1.1);
     box-shadow: 0 7px 24px rgba(91, 12, 71, 0.45);
 }
 
-.prev:active,
-.next:active {
+/* Нажатие */
+.slider__button:active {
     transform: scale(0.95);
 }
 
-.prev svg,
-.next svg {
+/* Значки стрелок */
+.slider__button svg {
     width: 34px;
     height: 34px;
     stroke-width: 2.5;
 }
 
-.slider-pagination {
+.slider__pagination {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -370,7 +372,7 @@ body {
     color: var(--color-one);
 }
 
-.infinity-symbol {
+.ed__infinity-symbol {
     font-size: 28px;
 }
 
