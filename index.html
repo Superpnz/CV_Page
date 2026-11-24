@@ -27,21 +27,13 @@
 
             <!-- Навигация -->
             <nav class="header-nav" id="header-nav">
-                <a href="#home" 
-                data-ru="Главная"
-                data-en="Home"></a>
-                <a href="#technologies" data-ru="Технологии"
-                data-en="Technologies"></a>
-                <a href="#projects" data-ru="Проекты"
-                data-en="Projects"></a>
-                <a href="#about" data-ru="Обо мне"
-                data-en="About me"></a>
-                <a href="#gallery" data-ru="Галерея"
-                data-en="Gallery"></a>
-                <a href="#hobbies" data-ru="Увлечения"
-                data-en="Hobbies"></a>
-                <a href="#contacts" data-ru="Контакты"
-                data-en="Contacts"></a>
+                <a href="#home" data-ru="Главная" data-en="Home"></a>
+                <a href="#technologies" data-ru="Технологии" data-en="Technologies"></a>
+                <a href="#projects" data-ru="Проекты" data-en="Projects"></a>
+                <a href="#about" data-ru="Обо мне" data-en="About me"></a>
+                <a href="#gallery" data-ru="Галерея" data-en="Gallery"></a>
+                <a href="#hobbies" data-ru="Увлечения" data-en="Hobbies"></a>
+                <a href="#contacts" data-ru="Контакты" data-en="Contacts"></a>
             </nav>
 
             <!-- Переключение языка -->
@@ -51,30 +43,21 @@
             </div>
 
             <!-- Кнопка бургер-меню -->
-            <button
-                class="menu-toggle"
-                type="button"
-                aria-label="Открыть меню"
-                aria-expanded="false"
-                aria-controls="header-nav"
-            >
+            <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"
+                aria-controls="header-nav">
                 <i data-lucide="menu"></i>
             </button>
 
         </div>
     </header>
-    
-    <main >
+
+    <main>
         <header class="header">
             <!--Здесь у нас главное изображение и заголовок-->
             <img src="Assets/Без_фона_за_ноутбуком2.png" alt="my photo" class="avatar">
-            <h1 class="header_title" 
-            data-ru="Максим Аникеев | Резюме"
-            data-en="Maksim Anikeev | CV">
+            <h1 class="header_title" data-ru="Максим Аникеев | Резюме" data-en="Maksim Anikeev | CV">
             </h1>
-            <h2 class="header_subtitle"
-            data-ru="Frontend Разработчик"
-            data-en="Frontend Developer">
+            <h2 class="header_subtitle" data-ru="Frontend Разработчик" data-en="Frontend Developer">
             </h2>
         </header>
 
@@ -82,16 +65,13 @@
 
             <section class="skills" id="technologies">
                 <!--Мои навыки-->
-                <h3 
-                data-ru="Технологии" 
-                data-en="Technologies">
+                <h3 data-ru="Технологии" data-en="Technologies">
                 </h3>
-    
+
                 <details>
-                    <summary data-ru="Перечень технологий:"
-                    data-en="List of technologies:">
+                    <summary data-ru="Перечень технологий:" data-en="List of technologies:">
                     </summary>
-    
+
                     <ol>
                         <li>1.HTML</li>
                         <li>2.CSS / SCSS</li>
@@ -107,41 +87,39 @@
             <hr class="separator-two">
 
             <section class="project" id="project">
-                <h3 data-ru="Мои проекты"
-                data-en="My projects"></h3>
+                <h3 data-ru="Мои проекты" data-en="My projects"></h3>
             </section>
 
             <hr class="separator-two">
-    
+
             <article class="article" id="about">
-                <h3
-                data-ru="Обо мне"
-                data-en="About me">
+                <h3 data-ru="Обо мне" data-en="About me">
                 </h3>
-    
-                <p data-ru="Я в 2024 году решил поменять свою профессию и стать разработчиком. На пути к цели я изучил много различной информации и приобрёл навыки связанные с профессией Frontend разработчика." 
-                data-en="In 2024, I made the decision to switch careers and pursue a path as a developer. Along the way, I’ve learned a great deal and gained practical skills in Frontend development.">
+
+                <p data-ru="Я в 2024 году решил поменять свою профессию и стать разработчиком. На пути к цели я изучил много различной информации и приобрёл навыки связанные с профессией Frontend разработчика."
+                    data-en="In 2024, I made the decision to switch careers and pursue a path as a developer. Along the way, I’ve learned a great deal and gained practical skills in Frontend development.">
                 </p>
             </article>
-    
+
             <section class="gallery" id="gallery">
                 <!--Мои сертификат -->
-                <h4 
-                data-ru="Сертификаты"
-                data-en="Certificate">
-                </h4>
+                <h4 data-ru="Сертификаты" data-en="Certificate"></h4>
                 <div class="slider-container">
                     <div class="slider" data-slider></div>
-                    <button class="prev" data-btn-prev>❮</button>
-                    <button class="next" data-btn-next>❯</button>
+                    <button class="prev" data-btn-prev aria-label="Предыдущий сертификат">
+                        <i data-lucide="chevron-left"></i>
+                    </button>
+                    <button class="next" data-btn-next aria-label="Следующий сертификат">
+                        <i data-lucide="chevron-right"></i>
+                    </button>
                 </div>
-    
+
+                <div class="slider-pagination" data-pagination></div>
+
                 <hr class="separator">
 
                 <!--Мои изображения-->
-                <h3 
-                data-ru="Галерея"
-                data-en="Gallery">
+                <h3 data-ru="Галерея" data-en="Gallery">
                 </h3>
                 <img src="Assets/Программирование_в_горах.webp" height="250" width="250" alt="developer lifestyle">
                 <img src="Assets/Моё_лицо.webp" height="250" width="250" alt="my photo">
@@ -149,115 +127,84 @@
                 <img src="Assets/Стиль_аниме.webp" height="250" width="200" alt="rest">
                 <img src="Assets/Стиль_пиксар.webp" height="250" width="200" alt="rest">
             </section>
-    
+
             <hr class="separator-two">
-    
+
             <!--Мои увлечения-->
             <section class="hobbies" id="hobbies">
-                <h3 
-                data-ru="Мои увлечения:" 
-                data-en="My hobbies:">
+                <h3 data-ru="Мои увлечения:" data-en="My hobbies:">
                 </h3>
                 <details>
-                    <summary 
-                    data-ru="Увлечения" 
-                    data-en="Hobbies">
+                    <summary data-ru="Увлечения" data-en="Hobbies">
                     </summary>
-    
+
                     <ol>
-                        <li 
-                        data-ru="Чтение книг" 
-                        data-en="Reading books">
+                        <li data-ru="Чтение книг" data-en="Reading books">
                         </li>
-                        <li 
-                        data-ru="Пауэрлифтинг" 
-                        data-en="Powerlifting">
+                        <li data-ru="Пауэрлифтинг" data-en="Powerlifting">
                         </li>
-                        <li 
-                        data-ru="Прогулки с друзьями" 
-                        data-en="Walks with friends">
+                        <li data-ru="Прогулки с друзьями" data-en="Walks with friends">
                         </li>
-                        <li 
-                        data-ru="Бокс" 
-                        data-en="Boxing">
+                        <li data-ru="Бокс" data-en="Boxing">
                         </li>
                     </ol>
                 </details>
             </section>
-    
+
             <hr class="separator">
-    
+
             <!--Моё образование-->
             <section class="ed">
                 <table class="ed__table">
                     <thead>
                         <tr>
-                            <th 
-                            data-ru="Школа / Университет"
-                            data-en="School / University">
+                            <th data-ru="Школа / Университет" data-en="School / University">
                             </th>
-                            <th
-                            data-ru="Специальность"
-                            data-en="Profession">
+                            <th data-ru="Специальность" data-en="Profession">
                             </th>
-                            <th 
-                            data-ru="Год окончания"
-                            data-en="Year of manufacture">
+                            <th data-ru="Год окончания" data-en="Year of manufacture">
                             </th>
                         </tr>
                     </thead>
-    
+
                     <tbody>
                         <tr>
-                            <td 
-                            data-ru="Школа №16"
-                            data-en="School №16">
+                            <td data-ru="Школа №16" data-en="School №16">
                             </td>
                             <td class="infinity-symbol">-</td>
                             <td>2015</td>
                         </tr>
                         <tr>
-                            <td 
-                            data-ru="Пензенский Государственный Университет"
-                            data-en="Penza State University">
+                            <td data-ru="Пензенский Государственный Университет" data-en="Penza State University">
                             </td>
-                            <td
-                            data-ru="Правоохранительная деятельность"
-                            data-en="Law enforcement"></td>
+                            <td data-ru="Правоохранительная деятельность" data-en="Law enforcement"></td>
                             <td>2020</td>
                         </tr>
                         <tr>
-                            <td
-                            data-ru="Самообразование в сфере IT"
-                            data-en="Self-Education in IT">
+                            <td data-ru="Самообразование в сфере IT" data-en="Self-Education in IT">
                             </td>
-                            <td
-                            data-ru="Frontend Разработчик"
-                            data-en="Frontend Developer">
+                            <td data-ru="Frontend Разработчик" data-en="Frontend Developer">
                             </td>
                             <td class="infinity-symbol">∞</td>
                         </tr>
                     </tbody>
                 </table>
             </section>
-    
+
             <!--Цитата-->
             <section class="quote">
-                <blockquote
-                data-ru="Я вот думаю, что сила в правде. У кого правда — тот и сильней."
-                data-en="I think that power is in truth. Whoever has the truth is stronger.">
+                <blockquote data-ru="Я вот думаю, что сила в правде. У кого правда — тот и сильней."
+                    data-en="I think that power is in truth. Whoever has the truth is stronger.">
                 </blockquote>
             </section>
         </div>
     </main>
-    
+
     <hr class="separator">
 
     <!--Мои соц сети-->
     <footer id="contacts">
-        <h4 class="title" 
-        data-ru="Ссылки на мои социальные сети:"
-        data-en="Links to my social networks:"></h4>
+        <h4 class="title" data-ru="Ссылки на мои социальные сети:" data-en="Links to my social networks:"></h4>
         <address class="social-links">
             <a href="https://vk.com/makson58" class="icon" aria-label="My VK profile" target="_blank">
                 <svg class="icon-svg">
@@ -268,7 +215,7 @@
                 <svg class="icon-svg">
                     <use href="sprites.svg#telegram"></use>
                 </svg>
-        
+
             </a>
             <a href="https://github.com/Superpnz" class="icon" aria-label="My GitHub" target="_blank">
                 <svg class="icon-svg">

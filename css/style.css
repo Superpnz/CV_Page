@@ -278,13 +278,20 @@ body {
     position: absolute;
     top: 50%;
     translate: 0 -50%;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #fff;
-    border: none;
-    font-size: 2vw;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 59px;
+    height: 59px;
+    padding: 0;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: var(--color-two);
+    color: var(--background);
     z-index: 10;
     cursor: pointer;
+    box-shadow: 0 5px 20px rgba(91, 12, 71, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .prev {
@@ -293,6 +300,53 @@ body {
 
 .next {
     right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+    transform: scale(1.1);
+    box-shadow: 0 7px 24px rgba(91, 12, 71, 0.45);
+}
+
+.prev:active,
+.next:active {
+    transform: scale(0.95);
+}
+
+.prev svg,
+.next svg {
+    width: 34px;
+    height: 34px;
+    stroke-width: 2.5;
+}
+
+.slider-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 18px 10px;
+}
+
+.pagination-dot {
+    flex: 0 0 9px;
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(91, 12, 71, 0.35);
+    cursor: pointer;
+    transition: 
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.pagination-dot.active {
+    background-color: var(--color-two);
+    transform: scale(1.4);
 }
 
 .hobbies {
