@@ -1,9 +1,9 @@
 const images = [
-    "Assets/Udemy React Kalatilshchykau .webp",
-    "Assets/сертификат_openAI.webp",
-    "Assets/Сертификат itilogia.webp",
-    "Assets/Сертификат_основы_алгоритмов_и_структур_данных.webp",
-    "Assets/Сертификат_основы_цифровой_граматности.webp",
+    "Assets/MyCertificates/Udemy React Kalatilshchykau .webp",
+    "Assets/MyCertificates/сертификат_openAI.webp",
+    "Assets/MyCertificates/Сертификат itilogia.webp",
+    "Assets/MyCertificates/Сертификат_основы_алгоритмов_и_структур_данных.webp",
+    "Assets/MyCertificates/Сертификат_основы_цифровой_граматности.webp",
 ];
 
 const slider = document.querySelector("[data-slider]");
